@@ -1,0 +1,695 @@
+Loaded PODNN data:
+  M training samples: 450
+  N reduced dim: 162
+  N test mus: 5
+PODNN Grid Search
+Architectures: ['5x60', '5x80', '6x100', '7x60']
+Activations:   ['tanh', 'gelu']
+Weight decays: [0.0, 1e-05, 0.0001]
+Max epochs:    80000
+Scheduler:     ReduceLROnPlateau(factor=0.5, patience=3000)
+Total configs: 24
+
+============================================================
+RUN 1: arch=5x60, act=tanh, wd=0.0
+============================================================
+Parameters: 24702
+  epoch   5000  loss=3.580e-02  lr=1.00e-03
+  epoch  10000  loss=2.783e-02  lr=1.00e-03
+  epoch  15000  loss=2.509e-02  lr=1.00e-03
+  epoch  20000  loss=2.370e-02  lr=1.00e-03
+  epoch  25000  loss=2.282e-02  lr=1.00e-03
+  epoch  30000  loss=2.270e-02  lr=1.00e-03
+  epoch  35000  loss=2.193e-02  lr=1.00e-03
+  epoch  40000  loss=2.271e-02  lr=1.00e-03
+  epoch  45000  loss=2.154e-02  lr=1.00e-03
+  epoch  50000  loss=2.145e-02  lr=1.00e-03
+  epoch  55000  loss=2.107e-02  lr=1.00e-03
+  epoch  60000  loss=2.090e-02  lr=1.00e-03
+  epoch  65000  loss=2.092e-02  lr=1.00e-03
+  epoch  70000  loss=2.070e-02  lr=1.00e-03
+  epoch  75000  loss=2.066e-02  lr=1.00e-03
+  epoch  80000  loss=2.100e-02  lr=1.00e-03
+  Final loss: 2.100e-02
+  Errors Euclid: ['1.450e-01', '1.074e-01', '2.245e-01', '2.295e-01', '2.469e-01']
+  Errors X-norm: ['1.232e-01', '1.288e-01', '2.599e-01', '5.013e-01', '3.575e-01']
+  Mean err Euclid: 1.906e-01,  X-norm: 2.742e-01
+  Training time: 317.6s
+
+============================================================
+RUN 2: arch=5x60, act=tanh, wd=1e-05
+============================================================
+Parameters: 24702
+  epoch   5000  loss=4.232e-02  lr=1.00e-03
+  epoch  10000  loss=3.097e-02  lr=1.00e-03
+  epoch  15000  loss=2.738e-02  lr=1.00e-03
+  epoch  20000  loss=2.596e-02  lr=1.00e-03
+  epoch  25000  loss=2.492e-02  lr=1.00e-03
+  epoch  30000  loss=2.414e-02  lr=1.00e-03
+  epoch  35000  loss=2.347e-02  lr=1.00e-03
+  epoch  40000  loss=2.298e-02  lr=1.00e-03
+  epoch  45000  loss=2.265e-02  lr=1.00e-03
+  epoch  50000  loss=2.236e-02  lr=1.00e-03
+  epoch  55000  loss=2.213e-02  lr=1.00e-03
+  epoch  60000  loss=2.200e-02  lr=1.00e-03
+  epoch  65000  loss=2.189e-02  lr=1.00e-03
+  epoch  70000  loss=2.158e-02  lr=1.00e-03
+  epoch  75000  loss=2.234e-02  lr=1.00e-03
+  epoch  80000  loss=2.131e-02  lr=1.00e-03
+  Final loss: 2.131e-02
+  Errors Euclid: ['1.642e-01', '1.032e-01', '2.497e-01', '1.351e-01', '2.759e-01']
+  Errors X-norm: ['1.569e-01', '1.679e-01', '3.358e-01', '2.812e-01', '3.873e-01']
+  Mean err Euclid: 1.856e-01,  X-norm: 2.658e-01
+  Training time: 330.4s
+
+============================================================
+RUN 3: arch=5x60, act=tanh, wd=0.0001
+============================================================
+Parameters: 24702
+  epoch   5000  loss=8.003e-02  lr=1.00e-03
+  epoch  10000  loss=5.765e-02  lr=1.00e-03
+  epoch  15000  loss=4.900e-02  lr=1.00e-03
+  epoch  20000  loss=4.430e-02  lr=1.00e-03
+  epoch  25000  loss=4.237e-02  lr=1.00e-03
+  epoch  30000  loss=4.185e-02  lr=1.00e-03
+  epoch  35000  loss=3.955e-02  lr=1.00e-03
+  epoch  40000  loss=3.881e-02  lr=1.00e-03
+  epoch  45000  loss=3.783e-02  lr=1.00e-03
+  epoch  50000  loss=3.683e-02  lr=1.00e-03
+  epoch  55000  loss=3.630e-02  lr=1.00e-03
+  epoch  60000  loss=3.603e-02  lr=1.00e-03
+  epoch  65000  loss=3.566e-02  lr=1.00e-03
+  epoch  70000  loss=3.547e-02  lr=1.00e-03
+  epoch  75000  loss=3.535e-02  lr=1.00e-03
+  epoch  80000  loss=3.476e-02  lr=1.00e-03
+  Final loss: 3.476e-02
+  Errors Euclid: ['1.921e-01', '1.241e-01', '1.764e-01', '1.370e-01', '2.270e-01']
+  Errors X-norm: ['1.398e-01', '1.659e-01', '2.301e-01', '2.810e-01', '3.431e-01']
+  Mean err Euclid: 1.713e-01,  X-norm: 2.320e-01
+  Training time: 306.5s
+
+============================================================
+RUN 4: arch=5x60, act=gelu, wd=0.0
+============================================================
+Parameters: 24702
+  epoch   5000  loss=6.958e-02  lr=1.00e-03
+  epoch  10000  loss=4.614e-02  lr=1.00e-03
+  epoch  15000  loss=3.849e-02  lr=1.00e-03
+  epoch  20000  loss=3.517e-02  lr=1.00e-03
+  epoch  25000  loss=3.217e-02  lr=1.00e-03
+  epoch  30000  loss=2.992e-02  lr=1.00e-03
+  epoch  35000  loss=3.281e-02  lr=1.00e-03
+  epoch  40000  loss=2.737e-02  lr=1.00e-03
+  epoch  45000  loss=3.089e-02  lr=1.00e-03
+  epoch  50000  loss=2.698e-02  lr=1.00e-03
+  epoch  55000  loss=2.943e-02  lr=1.00e-03
+  epoch  60000  loss=2.562e-02  lr=1.00e-03
+  epoch  65000  loss=2.500e-02  lr=1.00e-03
+  epoch  70000  loss=2.648e-02  lr=1.00e-03
+  epoch  75000  loss=2.619e-02  lr=1.00e-03
+  epoch  80000  loss=2.429e-02  lr=1.00e-03
+  Final loss: 2.429e-02
+  Errors Euclid: ['2.345e-01', '1.103e-01', '1.880e-01', '2.424e-01', '2.267e-01']
+  Errors X-norm: ['1.011e-01', '1.280e-01', '2.911e-01', '4.074e-01', '3.623e-01']
+  Mean err Euclid: 2.004e-01,  X-norm: 2.580e-01
+  Training time: 354.6s
+
+============================================================
+RUN 5: arch=5x60, act=gelu, wd=1e-05
+============================================================
+Parameters: 24702
+  epoch   5000  loss=6.352e-02  lr=1.00e-03
+  epoch  10000  loss=4.784e-02  lr=1.00e-03
+  epoch  15000  loss=3.827e-02  lr=1.00e-03
+  epoch  20000  loss=3.486e-02  lr=1.00e-03
+  epoch  25000  loss=3.149e-02  lr=1.00e-03
+  epoch  30000  loss=3.093e-02  lr=1.00e-03
+  epoch  35000  loss=2.941e-02  lr=1.00e-03
+  epoch  40000  loss=3.117e-02  lr=1.00e-03
+  epoch  45000  loss=3.155e-02  lr=1.00e-03
+  epoch  50000  loss=2.752e-02  lr=1.00e-03
+  epoch  55000  loss=2.703e-02  lr=1.00e-03
+  epoch  60000  loss=2.647e-02  lr=1.00e-03
+  epoch  65000  loss=2.709e-02  lr=1.00e-03
+  epoch  70000  loss=2.661e-02  lr=1.00e-03
+  epoch  75000  loss=3.279e-02  lr=1.00e-03
+  epoch  80000  loss=2.591e-02  lr=1.00e-03
+  Final loss: 2.591e-02
+  Errors Euclid: ['3.039e-01', '1.129e-01', '1.312e-01', '1.580e-01', '2.182e-01']
+  Errors X-norm: ['1.890e-01', '1.274e-01', '1.399e-01', '3.579e-01', '3.115e-01']
+  Mean err Euclid: 1.848e-01,  X-norm: 2.251e-01
+  Training time: 478.9s
+
+============================================================
+RUN 6: arch=5x60, act=gelu, wd=0.0001
+============================================================
+Parameters: 24702
+  epoch   5000  loss=1.476e-01  lr=1.00e-03
+  epoch  10000  loss=1.062e-01  lr=1.00e-03
+  epoch  15000  loss=8.132e-02  lr=1.00e-03
+  epoch  20000  loss=7.562e-02  lr=1.00e-03
+  epoch  25000  loss=6.123e-02  lr=1.00e-03
+  epoch  30000  loss=5.750e-02  lr=1.00e-03
+  epoch  35000  loss=5.082e-02  lr=1.00e-03
+  epoch  40000  loss=5.030e-02  lr=1.00e-03
+  epoch  45000  loss=4.579e-02  lr=1.00e-03
+  epoch  50000  loss=4.335e-02  lr=1.00e-03
+  epoch  55000  loss=5.132e-02  lr=1.00e-03
+  epoch  60000  loss=4.787e-02  lr=1.00e-03
+  epoch  65000  loss=4.044e-02  lr=1.00e-03
+  epoch  70000  loss=4.051e-02  lr=1.00e-03
+  epoch  75000  loss=3.907e-02  lr=1.00e-03
+  epoch  80000  loss=3.779e-02  lr=1.00e-03
+  Final loss: 3.779e-02
+  Errors Euclid: ['4.075e-01', '1.677e-01', '1.474e-01', '1.441e-01', '2.381e-01']
+  Errors X-norm: ['2.505e-01', '2.177e-01', '2.694e-01', '4.878e-01', '3.471e-01']
+  Mean err Euclid: 2.210e-01,  X-norm: 3.145e-01
+  Training time: 531.7s
+
+============================================================
+RUN 7: arch=5x80, act=tanh, wd=0.0
+============================================================
+Parameters: 39282
+  epoch   5000  loss=3.171e-02  lr=1.00e-03
+  epoch  10000  loss=5.809e-03  lr=1.00e-03
+  epoch  15000  loss=3.588e-03  lr=1.00e-03
+  epoch  20000  loss=2.249e-03  lr=1.00e-03
+  epoch  25000  loss=1.901e-03  lr=1.00e-03
+  epoch  30000  loss=1.666e-03  lr=1.00e-03
+  epoch  35000  loss=1.473e-03  lr=1.00e-03
+  epoch  40000  loss=2.151e-03  lr=1.00e-03
+  epoch  45000  loss=1.181e-03  lr=1.00e-03
+  epoch  50000  loss=1.489e-03  lr=1.00e-03
+  epoch  55000  loss=1.539e-03  lr=1.00e-03
+  epoch  60000  loss=1.015e-03  lr=1.00e-03
+  epoch  65000  loss=8.634e-04  lr=1.00e-03
+  epoch  70000  loss=1.136e-03  lr=1.00e-03
+  epoch  75000  loss=8.020e-04  lr=1.00e-03
+  epoch  80000  loss=1.012e-03  lr=1.00e-03
+  Final loss: 1.012e-03
+  Errors Euclid: ['4.931e-02', '2.651e-02', '2.660e-02', '3.032e-02', '2.169e-02']
+  Errors X-norm: ['7.349e-02', '3.718e-02', '3.426e-02', '1.089e-01', '4.493e-02']
+  Mean err Euclid: 3.089e-02,  X-norm: 5.975e-02
+  Training time: 345.3s
+
+============================================================
+RUN 8: arch=5x80, act=tanh, wd=1e-05
+============================================================
+Parameters: 39282
+  epoch   5000  loss=1.261e-02  lr=1.00e-03
+  epoch  10000  loss=1.027e-02  lr=1.00e-03
+  epoch  15000  loss=6.260e-03  lr=1.00e-03
+  epoch  20000  loss=3.901e-03  lr=1.00e-03
+  epoch  25000  loss=3.418e-03  lr=1.00e-03
+  epoch  30000  loss=3.560e-03  lr=1.00e-03
+  epoch  35000  loss=2.876e-03  lr=1.00e-03
+  epoch  40000  loss=2.679e-03  lr=1.00e-03
+  epoch 44439: LR reduced to 5.00e-04
+  epoch  45000  loss=2.656e-03  lr=5.00e-04
+  epoch  50000  loss=2.497e-03  lr=5.00e-04
+  epoch  55000  loss=2.217e-03  lr=5.00e-04
+  epoch  60000  loss=2.076e-03  lr=5.00e-04
+  epoch  65000  loss=1.953e-03  lr=5.00e-04
+  epoch  70000  loss=1.842e-03  lr=5.00e-04
+  epoch  75000  loss=1.747e-03  lr=5.00e-04
+  epoch  80000  loss=1.659e-03  lr=5.00e-04
+  Final loss: 1.659e-03
+  Errors Euclid: ['8.440e-02', '4.765e-02', '4.114e-02', '4.151e-02', '3.675e-02']
+  Errors X-norm: ['1.254e-01', '4.936e-02', '8.493e-02', '1.481e-01', '6.842e-02']
+  Mean err Euclid: 5.029e-02,  X-norm: 9.525e-02
+  Training time: 353.2s
+
+============================================================
+RUN 9: arch=5x80, act=tanh, wd=0.0001
+============================================================
+Parameters: 39282
+  epoch   5000  loss=3.866e-02  lr=1.00e-03
+  epoch  10000  loss=3.654e-02  lr=1.00e-03
+  epoch  15000  loss=2.056e-02  lr=1.00e-03
+  epoch  20000  loss=1.790e-02  lr=1.00e-03
+  epoch  25000  loss=1.618e-02  lr=1.00e-03
+  epoch  30000  loss=6.878e-02  lr=1.00e-03
+  epoch  35000  loss=1.433e-02  lr=1.00e-03
+  epoch  40000  loss=1.363e-02  lr=1.00e-03
+  epoch  45000  loss=1.306e-02  lr=1.00e-03
+  epoch  50000  loss=1.277e-02  lr=1.00e-03
+  epoch  55000  loss=1.272e-02  lr=1.00e-03
+  epoch  60000  loss=1.204e-02  lr=1.00e-03
+  epoch  65000  loss=1.349e-02  lr=1.00e-03
+  epoch 67413: LR reduced to 5.00e-04
+  epoch  70000  loss=1.151e-02  lr=5.00e-04
+  epoch  75000  loss=1.122e-02  lr=5.00e-04
+  epoch  80000  loss=1.055e-02  lr=5.00e-04
+  Final loss: 1.055e-02
+  Errors Euclid: ['1.770e-01', '8.509e-02', '3.809e-02', '7.297e-02', '4.613e-02']
+  Errors X-norm: ['1.109e-01', '9.952e-02', '9.515e-02', '2.612e-01', '1.615e-01']
+  Mean err Euclid: 8.386e-02,  X-norm: 1.456e-01
+  Training time: 357.7s
+
+============================================================
+RUN 10: arch=5x80, act=gelu, wd=0.0
+============================================================
+Parameters: 39282
+  epoch   5000  loss=2.240e-02  lr=1.00e-03
+  epoch  10000  loss=1.290e-02  lr=1.00e-03
+  epoch  15000  loss=8.759e-03  lr=1.00e-03
+  epoch  20000  loss=6.557e-03  lr=1.00e-03
+  epoch  25000  loss=5.373e-03  lr=1.00e-03
+  epoch  30000  loss=4.684e-03  lr=1.00e-03
+  epoch  35000  loss=4.584e-03  lr=1.00e-03
+  epoch  40000  loss=4.047e-03  lr=1.00e-03
+  epoch  45000  loss=4.916e-03  lr=1.00e-03
+  epoch  50000  loss=3.313e-03  lr=1.00e-03
+  epoch  55000  loss=7.054e-03  lr=1.00e-03
+  epoch  60000  loss=3.359e-03  lr=1.00e-03
+  epoch  65000  loss=2.615e-03  lr=1.00e-03
+  epoch  70000  loss=2.828e-03  lr=1.00e-03
+  epoch  75000  loss=2.360e-03  lr=1.00e-03
+  epoch  80000  loss=2.453e-03  lr=1.00e-03
+  Final loss: 2.453e-03
+  Errors Euclid: ['9.484e-02', '3.657e-02', '2.878e-02', '6.059e-02', '5.476e-02']
+  Errors X-norm: ['4.315e-02', '5.140e-02', '5.141e-02', '1.803e-01', '8.475e-02']
+  Mean err Euclid: 5.511e-02,  X-norm: 8.221e-02
+  Training time: 410.7s
+
+============================================================
+RUN 11: arch=5x80, act=gelu, wd=1e-05
+============================================================
+Parameters: 39282
+  epoch   5000  loss=2.240e-02  lr=1.00e-03
+  epoch  10000  loss=1.296e-02  lr=1.00e-03
+  epoch  15000  loss=1.287e-02  lr=1.00e-03
+  epoch  20000  loss=7.230e-03  lr=1.00e-03
+  epoch  25000  loss=8.022e-03  lr=1.00e-03
+  epoch  30000  loss=5.268e-03  lr=1.00e-03
+  epoch  35000  loss=6.005e-03  lr=1.00e-03
+  epoch  40000  loss=4.482e-03  lr=1.00e-03
+  epoch  45000  loss=4.138e-03  lr=1.00e-03
+  epoch  50000  loss=3.967e-03  lr=1.00e-03
+  epoch  55000  loss=6.135e-03  lr=1.00e-03
+  epoch  60000  loss=4.759e-03  lr=1.00e-03
+  epoch  65000  loss=3.436e-03  lr=1.00e-03
+  epoch  70000  loss=3.166e-03  lr=1.00e-03
+  epoch  75000  loss=4.877e-03  lr=1.00e-03
+  epoch  80000  loss=3.667e-03  lr=1.00e-03
+  Final loss: 3.667e-03
+  Errors Euclid: ['1.229e-01', '4.984e-02', '4.905e-02', '4.433e-02', '2.252e-02']
+  Errors X-norm: ['7.433e-02', '8.841e-02', '1.112e-01', '1.612e-01', '1.471e-01']
+  Mean err Euclid: 5.773e-02,  X-norm: 1.165e-01
+  Training time: 541.8s
+
+============================================================
+RUN 12: arch=5x80, act=gelu, wd=0.0001
+============================================================
+Parameters: 39282
+  epoch   5000  loss=6.256e-02  lr=1.00e-03
+  epoch  10000  loss=3.889e-02  lr=1.00e-03
+  epoch  15000  loss=2.629e-02  lr=1.00e-03
+  epoch  20000  loss=2.367e-02  lr=1.00e-03
+  epoch  25000  loss=1.856e-02  lr=1.00e-03
+  epoch  30000  loss=1.957e-02  lr=1.00e-03
+  epoch  35000  loss=1.574e-02  lr=1.00e-03
+  epoch  40000  loss=1.334e-02  lr=1.00e-03
+  epoch  45000  loss=1.294e-02  lr=1.00e-03
+  epoch  50000  loss=1.192e-02  lr=1.00e-03
+  epoch  55000  loss=1.206e-02  lr=1.00e-03
+  epoch  60000  loss=1.053e-02  lr=1.00e-03
+  epoch  65000  loss=2.002e-02  lr=1.00e-03
+  epoch  70000  loss=2.290e-02  lr=1.00e-03
+  epoch  75000  loss=9.246e-03  lr=1.00e-03
+  epoch  80000  loss=9.524e-03  lr=1.00e-03
+  Final loss: 9.524e-03
+  Errors Euclid: ['1.420e-01', '6.230e-02', '5.342e-02', '8.228e-02', '5.589e-02']
+  Errors X-norm: ['1.371e-01', '8.337e-02', '2.744e-01', '2.070e-01', '1.361e-01']
+  Mean err Euclid: 7.918e-02,  X-norm: 1.676e-01
+  Training time: 726.7s
+
+============================================================
+RUN 13: arch=6x100, act=tanh, wd=0.0
+============================================================
+Parameters: 67162
+  epoch   5000  loss=1.474e-02  lr=1.00e-03
+  epoch  10000  loss=2.444e-01  lr=1.00e-03
+  epoch  15000  loss=1.573e-03  lr=1.00e-03
+  epoch 18362: LR reduced to 5.00e-04
+  epoch  20000  loss=1.379e-03  lr=5.00e-04
+  epoch  25000  loss=1.123e-03  lr=5.00e-04
+  epoch  30000  loss=7.452e-04  lr=5.00e-04
+  epoch  35000  loss=8.918e-04  lr=5.00e-04
+  epoch  40000  loss=7.984e-04  lr=5.00e-04
+  epoch  45000  loss=5.053e-04  lr=5.00e-04
+  epoch  50000  loss=6.036e-04  lr=5.00e-04
+  epoch  55000  loss=4.462e-04  lr=5.00e-04
+  epoch  60000  loss=4.398e-04  lr=5.00e-04
+  epoch  65000  loss=7.726e-04  lr=5.00e-04
+  epoch  70000  loss=3.717e-04  lr=5.00e-04
+  epoch  75000  loss=4.674e-04  lr=5.00e-04
+  epoch  80000  loss=8.427e-04  lr=5.00e-04
+  Final loss: 8.427e-04
+  Errors Euclid: ['3.413e-02', '1.791e-02', '1.122e-02', '1.887e-02', '1.587e-02']
+  Errors X-norm: ['3.565e-02', '2.801e-02', '3.434e-02', '6.409e-02', '7.405e-02']
+  Mean err Euclid: 1.960e-02,  X-norm: 4.723e-02
+  Training time: 486.7s
+
+============================================================
+RUN 14: arch=6x100, act=tanh, wd=1e-05
+============================================================
+Parameters: 67162
+  epoch   5000  loss=5.159e-03  lr=1.00e-03
+  epoch 9115: LR reduced to 5.00e-04
+  epoch  10000  loss=5.140e-03  lr=5.00e-04
+  epoch  15000  loss=2.079e-03  lr=5.00e-04
+  epoch  20000  loss=1.587e-03  lr=5.00e-04
+  epoch  25000  loss=1.285e-03  lr=5.00e-04
+  epoch  30000  loss=1.101e-03  lr=5.00e-04
+  epoch  35000  loss=9.994e-04  lr=5.00e-04
+  epoch  40000  loss=1.183e-03  lr=5.00e-04
+  epoch  45000  loss=8.913e-04  lr=5.00e-04
+  epoch  50000  loss=1.033e-03  lr=5.00e-04
+  epoch 51635: LR reduced to 2.50e-04
+  epoch  55000  loss=7.783e-04  lr=2.50e-04
+  epoch  60000  loss=7.124e-04  lr=2.50e-04
+  epoch  65000  loss=7.802e-04  lr=2.50e-04
+  epoch  70000  loss=6.317e-04  lr=2.50e-04
+  epoch  75000  loss=6.340e-04  lr=2.50e-04
+  epoch  80000  loss=5.659e-04  lr=2.50e-04
+  Final loss: 5.659e-04
+  Errors Euclid: ['5.744e-02', '3.070e-02', '1.237e-02', '2.532e-02', '2.707e-02']
+  Errors X-norm: ['4.359e-02', '3.259e-02', '4.395e-02', '9.100e-02', '5.460e-02']
+  Mean err Euclid: 3.058e-02,  X-norm: 5.315e-02
+  Training time: 541.3s
+
+============================================================
+RUN 15: arch=6x100, act=tanh, wd=0.0001
+============================================================
+Parameters: 67162
+  epoch   5000  loss=2.544e-02  lr=1.00e-03
+  epoch  10000  loss=1.471e-02  lr=1.00e-03
+  epoch 14072: LR reduced to 5.00e-04
+  epoch  15000  loss=1.191e-02  lr=5.00e-04
+  epoch  20000  loss=9.545e-03  lr=5.00e-04
+  epoch  25000  loss=2.658e-01  lr=5.00e-04
+  epoch  30000  loss=7.901e-03  lr=5.00e-04
+  epoch  35000  loss=6.982e-03  lr=5.00e-04
+  epoch  40000  loss=6.552e-03  lr=5.00e-04
+  epoch 43048: LR reduced to 2.50e-04
+  epoch  45000  loss=6.455e-03  lr=2.50e-04
+  epoch  50000  loss=5.954e-03  lr=2.50e-04
+  epoch  55000  loss=5.656e-03  lr=2.50e-04
+  epoch  60000  loss=5.452e-03  lr=2.50e-04
+  epoch  65000  loss=5.272e-03  lr=2.50e-04
+  epoch  70000  loss=5.145e-03  lr=2.50e-04
+  epoch  75000  loss=5.049e-03  lr=2.50e-04
+  epoch  80000  loss=4.952e-03  lr=2.50e-04
+  Final loss: 4.952e-03
+  Errors Euclid: ['1.257e-01', '5.706e-02', '2.934e-02', '4.677e-02', '2.117e-02']
+  Errors X-norm: ['1.052e-01', '1.205e-01', '6.182e-02', '1.400e-01', '9.931e-02']
+  Mean err Euclid: 5.602e-02,  X-norm: 1.053e-01
+  Training time: 513.2s
+
+============================================================
+RUN 16: arch=6x100, act=gelu, wd=0.0
+============================================================
+Parameters: 67162
+  epoch   5000  loss=5.478e-03  lr=1.00e-03
+  epoch  10000  loss=3.222e-03  lr=1.00e-03
+  epoch  15000  loss=4.067e-03  lr=1.00e-03
+  epoch  20000  loss=1.534e-03  lr=1.00e-03
+  epoch  25000  loss=9.499e-04  lr=1.00e-03
+  epoch  30000  loss=7.474e-04  lr=1.00e-03
+  epoch  35000  loss=5.445e-04  lr=1.00e-03
+  epoch  40000  loss=5.002e-04  lr=1.00e-03
+  epoch  45000  loss=5.587e-04  lr=1.00e-03
+  epoch  50000  loss=7.224e-04  lr=1.00e-03
+  epoch  55000  loss=6.836e-04  lr=1.00e-03
+  epoch  60000  loss=4.979e-04  lr=1.00e-03
+  epoch  65000  loss=2.389e-04  lr=1.00e-03
+  epoch  70000  loss=3.622e-04  lr=1.00e-03
+  epoch  75000  loss=2.193e-04  lr=1.00e-03
+  epoch  80000  loss=1.792e-04  lr=1.00e-03
+  Final loss: 1.792e-04
+  Errors Euclid: ['4.359e-02', '2.343e-02', '1.047e-02', '1.636e-02', '2.331e-02']
+  Errors X-norm: ['3.231e-02', '3.323e-02', '3.284e-02', '4.383e-02', '3.215e-02']
+  Mean err Euclid: 2.343e-02,  X-norm: 3.487e-02
+  Training time: 572.9s
+
+============================================================
+RUN 17: arch=6x100, act=gelu, wd=1e-05
+============================================================
+Parameters: 67162
+  epoch   5000  loss=6.779e-03  lr=1.00e-03
+  epoch  10000  loss=3.041e-03  lr=1.00e-03
+  epoch  15000  loss=2.907e-03  lr=1.00e-03
+  epoch  20000  loss=1.619e-03  lr=1.00e-03
+  epoch  25000  loss=1.277e-03  lr=1.00e-03
+  epoch  30000  loss=1.020e-03  lr=1.00e-03
+  epoch  35000  loss=8.707e-04  lr=1.00e-03
+  epoch  40000  loss=1.036e-03  lr=1.00e-03
+  epoch  45000  loss=6.451e-04  lr=1.00e-03
+  epoch  50000  loss=5.919e-04  lr=1.00e-03
+  epoch  55000  loss=5.728e-04  lr=1.00e-03
+  epoch  60000  loss=5.189e-04  lr=1.00e-03
+  epoch  65000  loss=4.532e-04  lr=1.00e-03
+  epoch  70000  loss=1.259e-03  lr=1.00e-03
+  epoch  75000  loss=4.293e-04  lr=1.00e-03
+  epoch  80000  loss=3.850e-04  lr=1.00e-03
+  Final loss: 3.850e-04
+  Errors Euclid: ['9.057e-02', '3.324e-02', '3.769e-02', '2.818e-02', '2.726e-02']
+  Errors X-norm: ['4.071e-02', '3.297e-02', '6.106e-02', '1.003e-01', '3.377e-02']
+  Mean err Euclid: 4.339e-02,  X-norm: 5.376e-02
+  Training time: 546.0s
+
+============================================================
+RUN 18: arch=6x100, act=gelu, wd=0.0001
+============================================================
+Parameters: 67162
+  epoch 3047: LR reduced to 5.00e-04
+  epoch   5000  loss=6.481e-01  lr=5.00e-04
+  epoch 6048: LR reduced to 2.50e-04
+  epoch 9049: LR reduced to 1.25e-04
+  epoch  10000  loss=6.481e-01  lr=1.25e-04
+  epoch 12050: LR reduced to 6.25e-05
+  epoch  15000  loss=6.481e-01  lr=6.25e-05
+  epoch 15051: LR reduced to 3.13e-05
+  epoch 18052: LR reduced to 1.56e-05
+  epoch  20000  loss=6.481e-01  lr=1.56e-05
+  epoch 21053: LR reduced to 7.81e-06
+  epoch 24054: LR reduced to 3.91e-06
+  epoch  25000  loss=6.481e-01  lr=3.91e-06
+  epoch 27055: LR reduced to 1.95e-06
+  epoch  30000  loss=6.481e-01  lr=1.95e-06
+  epoch 30056: LR reduced to 1.00e-06
+  epoch  35000  loss=6.481e-01  lr=1.00e-06
+  epoch  40000  loss=6.481e-01  lr=1.00e-06
+  epoch  45000  loss=6.481e-01  lr=1.00e-06
+  epoch  50000  loss=6.481e-01  lr=1.00e-06
+  epoch  55000  loss=6.481e-01  lr=1.00e-06
+  epoch  60000  loss=6.481e-01  lr=1.00e-06
+  epoch  65000  loss=6.481e-01  lr=1.00e-06
+  epoch  70000  loss=6.481e-01  lr=1.00e-06
+  epoch  75000  loss=6.481e-01  lr=1.00e-06
+  epoch  80000  loss=6.481e-01  lr=1.00e-06
+  Final loss: 6.481e-01
+  Errors Euclid: ['1.600e+00', '8.880e-01', '8.628e-01', '1.033e+00', '8.663e-01']
+  Errors X-norm: ['1.005e+00', '9.678e-01', '1.046e+00', '2.040e+00', '1.070e+00']
+  Mean err Euclid: 1.050e+00,  X-norm: 1.226e+00
+  Training time: 4410.9s
+
+============================================================
+RUN 19: arch=7x60, act=tanh, wd=0.0
+============================================================
+Parameters: 32022
+  epoch   5000  loss=5.256e-02  lr=1.00e-03
+  epoch  10000  loss=4.274e-02  lr=1.00e-03
+  epoch  15000  loss=2.674e-02  lr=1.00e-03
+  epoch  20000  loss=2.586e-02  lr=1.00e-03
+  epoch  25000  loss=2.419e-02  lr=1.00e-03
+  epoch  30000  loss=2.357e-02  lr=1.00e-03
+  epoch  35000  loss=2.374e-02  lr=1.00e-03
+  epoch  40000  loss=2.453e-02  lr=1.00e-03
+  epoch  45000  loss=2.223e-02  lr=1.00e-03
+  epoch  50000  loss=2.218e-02  lr=1.00e-03
+  epoch  55000  loss=2.179e-02  lr=1.00e-03
+  epoch  60000  loss=2.293e-02  lr=1.00e-03
+  epoch  65000  loss=2.231e-02  lr=1.00e-03
+  epoch  70000  loss=2.132e-02  lr=1.00e-03
+  epoch  75000  loss=2.106e-02  lr=1.00e-03
+  epoch  80000  loss=2.085e-02  lr=1.00e-03
+  Final loss: 2.085e-02
+  Errors Euclid: ['1.399e-01', '1.002e-01', '2.008e-01', '1.817e-01', '2.125e-01']
+  Errors X-norm: ['7.797e-02', '1.278e-01', '2.159e-01', '3.531e-01', '2.995e-01']
+  Mean err Euclid: 1.670e-01,  X-norm: 2.149e-01
+  Training time: 382.2s
+
+============================================================
+RUN 20: arch=7x60, act=tanh, wd=1e-05
+============================================================
+Parameters: 32022
+  epoch   5000  loss=5.007e-02  lr=1.00e-03
+  epoch  10000  loss=2.205e-01  lr=1.00e-03
+  epoch  15000  loss=2.893e-02  lr=1.00e-03
+  epoch  20000  loss=2.696e-02  lr=1.00e-03
+  epoch  25000  loss=2.533e-02  lr=1.00e-03
+  epoch  30000  loss=2.631e-02  lr=1.00e-03
+  epoch  35000  loss=3.985e-02  lr=1.00e-03
+  epoch 37427: LR reduced to 5.00e-04
+  epoch  40000  loss=2.344e-02  lr=5.00e-04
+  epoch  45000  loss=2.338e-02  lr=5.00e-04
+  epoch  50000  loss=2.257e-02  lr=5.00e-04
+  epoch  55000  loss=2.232e-02  lr=5.00e-04
+  epoch  60000  loss=2.202e-02  lr=5.00e-04
+  epoch  65000  loss=2.187e-02  lr=5.00e-04
+  epoch  70000  loss=2.166e-02  lr=5.00e-04
+  epoch  75000  loss=2.153e-02  lr=5.00e-04
+  epoch  80000  loss=2.140e-02  lr=5.00e-04
+  Final loss: 2.140e-02
+  Errors Euclid: ['1.441e-01', '1.274e-01', '1.544e-01', '1.952e-01', '2.133e-01']
+  Errors X-norm: ['1.251e-01', '1.465e-01', '2.370e-01', '3.776e-01', '3.480e-01']
+  Mean err Euclid: 1.669e-01,  X-norm: 2.468e-01
+  Training time: 387.7s
+
+============================================================
+RUN 21: arch=7x60, act=tanh, wd=0.0001
+============================================================
+Parameters: 32022
+  epoch   5000  loss=9.851e-02  lr=1.00e-03
+  epoch  10000  loss=5.887e-02  lr=1.00e-03
+  epoch  15000  loss=1.796e-01  lr=1.00e-03
+  epoch  20000  loss=5.141e-02  lr=1.00e-03
+  epoch  25000  loss=3.910e-02  lr=1.00e-03
+  epoch  30000  loss=3.537e-02  lr=1.00e-03
+  epoch  35000  loss=7.464e-02  lr=1.00e-03
+  epoch 39566: LR reduced to 5.00e-04
+  epoch  40000  loss=3.357e-02  lr=5.00e-04
+  epoch  45000  loss=3.260e-02  lr=5.00e-04
+  epoch  50000  loss=3.180e-02  lr=5.00e-04
+  epoch  55000  loss=3.121e-02  lr=5.00e-04
+  epoch  60000  loss=3.161e-02  lr=5.00e-04
+  epoch  65000  loss=3.053e-02  lr=5.00e-04
+  epoch  70000  loss=2.982e-02  lr=5.00e-04
+  epoch  75000  loss=2.927e-02  lr=5.00e-04
+  epoch  80000  loss=2.897e-02  lr=5.00e-04
+  Final loss: 2.897e-02
+  Errors Euclid: ['1.834e-01', '1.174e-01', '1.727e-01', '2.032e-01', '2.037e-01']
+  Errors X-norm: ['1.694e-01', '2.442e-01', '2.734e-01', '5.842e-01', '2.845e-01']
+  Mean err Euclid: 1.761e-01,  X-norm: 3.111e-01
+  Training time: 391.6s
+
+============================================================
+RUN 22: arch=7x60, act=gelu, wd=0.0
+============================================================
+Parameters: 32022
+  epoch   5000  loss=4.327e-02  lr=1.00e-03
+  epoch  10000  loss=2.341e-01  lr=1.00e-03
+  epoch 12431: LR reduced to 5.00e-04
+  epoch  15000  loss=9.775e-02  lr=5.00e-04
+  epoch 15432: LR reduced to 2.50e-04
+  epoch 18433: LR reduced to 1.25e-04
+  epoch  20000  loss=8.440e-02  lr=1.25e-04
+  epoch 21434: LR reduced to 6.25e-05
+  epoch 24435: LR reduced to 3.13e-05
+  epoch  25000  loss=8.016e-02  lr=3.13e-05
+  epoch 27436: LR reduced to 1.56e-05
+  epoch  30000  loss=7.826e-02  lr=1.56e-05
+  epoch 30437: LR reduced to 7.81e-06
+  epoch 33438: LR reduced to 3.91e-06
+  epoch  35000  loss=7.735e-02  lr=3.91e-06
+  epoch 36439: LR reduced to 1.95e-06
+  epoch 39440: LR reduced to 1.00e-06
+  epoch  40000  loss=7.690e-02  lr=1.00e-06
+  epoch  45000  loss=7.665e-02  lr=1.00e-06
+  epoch  50000  loss=7.643e-02  lr=1.00e-06
+  epoch  55000  loss=7.611e-02  lr=1.00e-06
+  epoch  60000  loss=7.588e-02  lr=1.00e-06
+  epoch  65000  loss=7.569e-02  lr=1.00e-06
+  epoch  70000  loss=7.550e-02  lr=1.00e-06
+  epoch  75000  loss=7.533e-02  lr=1.00e-06
+  epoch  80000  loss=7.516e-02  lr=1.00e-06
+  Final loss: 7.516e-02
+  Errors Euclid: ['1.901e-01', '1.822e-01', '2.568e-01', '4.175e-01', '3.650e-01']
+  Errors X-norm: ['1.188e-01', '1.950e-01', '3.873e-01', '7.558e-01', '5.548e-01']
+  Mean err Euclid: 2.823e-01,  X-norm: 4.023e-01
+  Training time: 456.4s
+
+============================================================
+RUN 23: arch=7x60, act=gelu, wd=1e-05
+============================================================
+Parameters: 32022
+  epoch 3034: LR reduced to 5.00e-04
+  epoch   5000  loss=6.481e-01  lr=5.00e-04
+  epoch 6035: LR reduced to 2.50e-04
+  epoch 9036: LR reduced to 1.25e-04
+  epoch  10000  loss=6.481e-01  lr=1.25e-04
+  epoch 12037: LR reduced to 6.25e-05
+  epoch  15000  loss=6.481e-01  lr=6.25e-05
+  epoch 15038: LR reduced to 3.13e-05
+  epoch 18039: LR reduced to 1.56e-05
+  epoch  20000  loss=6.481e-01  lr=1.56e-05
+  epoch 21040: LR reduced to 7.81e-06
+  epoch 24041: LR reduced to 3.91e-06
+  epoch  25000  loss=6.481e-01  lr=3.91e-06
+  epoch 27042: LR reduced to 1.95e-06
+  epoch  30000  loss=6.481e-01  lr=1.95e-06
+  epoch 30043: LR reduced to 1.00e-06
+  epoch  35000  loss=6.481e-01  lr=1.00e-06
+  epoch  40000  loss=6.481e-01  lr=1.00e-06
+  epoch  45000  loss=6.481e-01  lr=1.00e-06
+  epoch  50000  loss=6.481e-01  lr=1.00e-06
+  epoch  55000  loss=6.481e-01  lr=1.00e-06
+  epoch  60000  loss=6.481e-01  lr=1.00e-06
+  epoch  65000  loss=6.481e-01  lr=1.00e-06
+  epoch  70000  loss=6.481e-01  lr=1.00e-06
+  epoch  75000  loss=6.481e-01  lr=1.00e-06
+  epoch  80000  loss=6.481e-01  lr=1.00e-06
+  Final loss: 6.481e-01
+  Errors Euclid: ['1.600e+00', '8.880e-01', '8.628e-01', '1.033e+00', '8.663e-01']
+  Errors X-norm: ['1.005e+00', '9.678e-01', '1.046e+00', '2.040e+00', '1.070e+00']
+  Mean err Euclid: 1.050e+00,  X-norm: 1.226e+00
+  Training time: 2740.0s
+
+============================================================
+RUN 24: arch=7x60, act=gelu, wd=0.0001
+============================================================
+Parameters: 32022
+  epoch 3036: LR reduced to 5.00e-04
+  epoch   5000  loss=6.481e-01  lr=5.00e-04
+  epoch 6037: LR reduced to 2.50e-04
+  epoch 9038: LR reduced to 1.25e-04
+  epoch  10000  loss=6.481e-01  lr=1.25e-04
+  epoch 12039: LR reduced to 6.25e-05
+  epoch  15000  loss=6.481e-01  lr=6.25e-05
+  epoch 15040: LR reduced to 3.13e-05
+  epoch 18041: LR reduced to 1.56e-05
+  epoch  20000  loss=6.481e-01  lr=1.56e-05
+  epoch 21042: LR reduced to 7.81e-06
+  epoch 24043: LR reduced to 3.91e-06
+  epoch  25000  loss=6.481e-01  lr=3.91e-06
+  epoch 27044: LR reduced to 1.95e-06
+  epoch  30000  loss=6.481e-01  lr=1.95e-06
+  epoch 30045: LR reduced to 1.00e-06
+  epoch  35000  loss=6.481e-01  lr=1.00e-06
+  epoch  40000  loss=6.481e-01  lr=1.00e-06
+  epoch  45000  loss=6.481e-01  lr=1.00e-06
+  epoch  50000  loss=6.481e-01  lr=1.00e-06
+  epoch  55000  loss=6.481e-01  lr=1.00e-06
+  epoch  60000  loss=6.481e-01  lr=1.00e-06
+  epoch  65000  loss=6.481e-01  lr=1.00e-06
+  epoch  70000  loss=6.481e-01  lr=1.00e-06
+  epoch  75000  loss=6.481e-01  lr=1.00e-06
+  epoch  80000  loss=6.481e-01  lr=1.00e-06
+  Final loss: 6.481e-01
+  Errors Euclid: ['1.600e+00', '8.880e-01', '8.628e-01', '1.033e+00', '8.663e-01']
+  Errors X-norm: ['1.005e+00', '9.678e-01', '1.046e+00', '2.040e+00', '1.070e+00']
+  Mean err Euclid: 1.050e+00,  X-norm: 1.226e+00
+  Training time: 2859.2s
+
+============================================================
+Grid search complete in 5.38 hours
+============================================================
+
+TOP 5 by X-norm error:
+  1. arch=6x100   act=gelu  wd=0e+00  err_X=3.487e-02  err_2=2.343e-02  time=573s
+  2. arch=6x100   act=tanh  wd=0e+00  err_X=4.723e-02  err_2=1.960e-02  time=487s
+  3. arch=6x100   act=tanh  wd=1e-05  err_X=5.315e-02  err_2=3.058e-02  time=541s
+  4. arch=6x100   act=gelu  wd=1e-05  err_X=5.376e-02  err_2=4.339e-02  time=546s
+  5. arch=5x80    act=tanh  wd=0e+00  err_X=5.975e-02  err_2=3.089e-02  time=345s
